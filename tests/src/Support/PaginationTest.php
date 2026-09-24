@@ -56,7 +56,7 @@ it('can navigate when the same paginator is rendered multiple times', function (
         visit(PaginationBrowserTest::getUrl(isAbsolute: false))
             ->assertSeeIn('[data-testid="top-pagination"] [aria-current="page"]', '1')
             ->assertSeeIn('[data-testid="bottom-pagination"] [aria-current="page"]', '1')
-            ->click('[data-testid="top-pagination"] > button[rel="next"]')
+            ->click('[data-testid="top-pagination"] ol button[rel="next"]')
             ->assertSeeIn('[data-testid="top-pagination"] [aria-current="page"]', '2')
             ->assertSeeIn('[data-testid="bottom-pagination"] [aria-current="page"]', '2')
             ->assertNoAccessibilityIssues();
