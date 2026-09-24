@@ -48,6 +48,7 @@ jobs:
 
       - name: Check code style
         run: |
+          git restore composer.json composer.lock
           composer cs
           git diff --exit-code -- . ':(exclude).github/workflows/temporary-pagination-browser-ci.yml'
 
