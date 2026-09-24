@@ -46,6 +46,11 @@ jobs:
       - name: Install Playwright Chromium
         run: npx playwright install chromium
 
+      - name: Check code style
+        run: |
+          composer cs
+          git diff --exit-code -- . ':(exclude).github/workflows/temporary-pagination-browser-ci.yml'
+
       - name: Cache Blade views
         run: ./vendor/bin/testbench view:cache
 
