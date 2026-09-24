@@ -1,15 +1,7 @@
 <x-filament-panels::page>
-    <span
-        id="top-pagination-label"
-        class="fi-sr-only"
-    >
-        Top pagination
-    </span>
+    <span id="top-pagination-label" class="fi-sr-only">Top pagination</span>
 
-    <span
-        id="bottom-pagination-label"
-        class="fi-sr-only"
-    >
+    <span id="bottom-pagination-label" class="fi-sr-only">
         Bottom pagination
     </span>
 
